@@ -907,13 +907,29 @@ body._lock {
      object-fit: cover;
 }
 
-.thumbs {
+.thumbs_slider {
   position: absolute;
   width: 100%;
+  top: 474px;
+  left: 0;
+  -webkit-transform: scaleX(0.95);
+      -ms-transform: scaleX(0.95);
+          transform: scaleX(0.95);
 }
 
-.thumbs .swiper-slide-active span {
-  color: red;
+.thumbs_slider .swiper-slide {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #727272;
+  text-transform: uppercase;
+}
+
+.thumbs_slider .swiper-slide-active {
+  font-weight: 700;
+  color: #fff;
 }
 
 .swiper-button-prev {

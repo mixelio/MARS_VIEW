@@ -917,18 +917,25 @@
         iconMenu.classList.toggle("_active");
         menuBody.classList.toggle("_active");
     }));
-    const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
+    const galleryTop = new Swiper(".main_slider", {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
-        }
+        },
+        loopedSlides: 3,
+        loop: true
     });
-    const thumbs = new Swiper(".thumbs", {
-        direction: "horizontal",
-        slidesPerView: 3
+    const galleryThumbs = new Swiper(".thumbs_slider", {
+        centeredSlides: true,
+        slidesPerView: 5,
+        slideToClickedSlide: true,
+        loopedSlides: 3,
+        loop: true
     });
-    thumbs.controller.control = swiper;
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+    console.log(galleryTop);
+    console.log(galleryThumbs);
     window["FLS"] = true;
     isWebp();
     formFieldsInit({
