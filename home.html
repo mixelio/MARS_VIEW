@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220723212846" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220723212846">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220724102709" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220724102709">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,10 +39,10 @@
 				</a>
 				<nav class="burger_menu">
 					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">ABOUT</a></li>
-						<li><a href="">PROJECTS</a></li>
-						<li><a href="">CONTACT US</a></li>
+						<li><a href="#" data-goto=".header" class="header_link">HOME</a></li>
+						<li><a href="#" data-goto=".specs" class="header_link">ABOUT</a></li>
+						<li><a href="#" data-goto=".projects" class="header_link">PROJECTS</a></li>
+						<li><a href="#" data-goto=".contact_form" class="header_link">CONTACT US</a></li>
 					</ul>
 					<div class="burger__social __follow_us">
 						<ul>
@@ -79,7 +79,7 @@
 						Our award winning, High Speed Motion Control System is the perfect tool to capture stories and products in
 						new and unseen ways.
 					</p>
-					<a href="" class="first_screen__button white_button">
+					<a href="#" data-goto=".reasons" class="first_screen__button white_button link">
 						SEE WHAT WE DO
 						<svg>
 							<use xlink:href="img/icons/icons.svg#svg-arrowRight"></use>
@@ -202,7 +202,10 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="project__title_box">
-									<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.jpg" alt=""></picture>
+									<video muted autoplay loop poster="img/project-1.jpg" controls class="project_video">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.webm" type="video/webm">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.mp4" type="video/mp4">
+									</video>
 									<h3>MAIN PICTURE OF THE PROJECT</h3>
 								</div>
 								<div class="project__info">
@@ -247,7 +250,10 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="project__title_box">
-									<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.jpg" alt=""></picture>
+									<video muted autoplay loop poster="img/project-1.jpg" controls class="project_video">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.webm" type="video/webm">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.mp4" type="video/mp4">
+									</video>
 									<h3>MAIN PICTURE OF THE PROJECT 2</h3>
 								</div>
 								<div class="project__info">
@@ -273,7 +279,10 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="project__title_box">
-									<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.jpg" alt=""></picture>
+									<video muted autoplay loop poster="img/project-1.jpg" controls class="project_video">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.webm" type="video/webm">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.mp4" type="video/mp4">
+									</video>
 									<h3>MAIN PICTURE OF THE PROJECT 3</h3>
 								</div>
 								<div class="project__info">
@@ -299,7 +308,10 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="project__title_box">
-									<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.jpg" alt=""></picture>
+									<video muted autoplay loop poster="img/project-1.jpg" controls class="project_video">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.webm" type="video/webm">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.mp4" type="video/mp4">
+									</video>
 									<h3>MAIN PICTURE OF THE PROJECT 4</h3>
 								</div>
 								<div class="project__info">
@@ -325,7 +337,10 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="project__title_box">
-									<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.jpg" alt=""></picture>
+									<video muted autoplay loop poster="img/project-1.jpg" controls class="project_video">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.webm" type="video/webm">
+										<source src="img/video/Introducing the EOS 6D Mark II Full frame Camera - Canon.mp4" type="video/mp4">
+									</video>
 									<h3>MAIN PICTURE OF THE PROJECT 5</h3>
 								</div>
 								<div class="project__info">
@@ -463,10 +478,10 @@
 					<div class="footer__item">
 						<h3>Site Map</h3>
 						<ul class="site_map">
-							<li><a href="">About Us</a></li>
-							<li><a href="">Projects</a></li>
-							<li><a href="">Our News</a></li>
-							<li><a href="">Contacts</a></li>
+							<li><a href="#" data-goto=".promo_video">About Us</a></li>
+							<li><a href="#" data-goto=".projects">Projects</a></li>
+							<li><a href="#">Our News</a></li>
+							<li><a href="#" data-goto=".contacts">Contacts</a></li>
 						</ul>
 					</div>
 					<div class="footer__item">
@@ -477,7 +492,7 @@
 						</ul>
 					</div>
 					<div class="footer__item">
-						<a href="" class="go_up">
+						<a href="#" data-goto=".header" class="go_up">
 							<svg width="10" height="49" viewBox="0 0 10 49" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.66667 49L3.33333 49L3.33334 4.96551L3.84962e-06 4.96551L5 -4.37114e-07L10 4.96552L6.66667 4.96551L6.66667 49Z" fill="white" />
 							</svg>
@@ -518,8 +533,8 @@
 		</div>
 	</div>
 </div> -->
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220723212846"></script>
-	<script src="js/app.min.js?_v=20220723212846"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220724102709"></script>
+	<script src="js/app.min.js?_v=20220724102709"></script>
 </body>
 
 </html>
