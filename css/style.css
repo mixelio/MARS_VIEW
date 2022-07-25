@@ -2155,8 +2155,11 @@ body._lock {
     background: linear-gradient(0deg, rgb(25, 25, 25) 0%, rgb(25, 25, 25) 80%, rgb(39, 39, 39) 80%, rgb(39, 39, 39) 100%);
   }
 
-  .projects first_screen__social {
-    justify-content: flex-start;
+  .projects .project__info_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .projects .project__image_item {
