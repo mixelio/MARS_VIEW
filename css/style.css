@@ -2155,8 +2155,8 @@ body._lock {
     background: linear-gradient(0deg, rgb(25, 25, 25) 0%, rgb(25, 25, 25) 80%, rgb(39, 39, 39) 80%, rgb(39, 39, 39) 100%);
   }
 
-  .projects .project__hide_block {
-    display: block;
+  .projects first_screen__social {
+    justify-content: flex-start;
   }
 
   .projects .project__image_item {
